@@ -11,7 +11,7 @@ jobs:
       contents: read # to determine modified files (actions/labeler)
       pull-requests: write # to add labels to PRs (actions/labeler)
 
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
     steps:
     - uses: actions/labeler@v3
       with:
@@ -23,7 +23,7 @@ jobs:
       contents: read
       pull-requests: write
 
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
     steps:
     - uses: thehanimo/pr-title-checker@v1.3.5
       with:
